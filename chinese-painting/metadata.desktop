@@ -1,0 +1,13 @@
+[SddmGreeterTheme]
+Name=Chinese Painting
+Description=Chinese style SDDM theme.
+License=GPL3.0
+Type=sddm-theme
+Version=0.1
+Website=https://github.com/fralonra/sddm-chinese-painting-theme
+Screenshot=screenshot.jpg
+MainScript=Main.qml
+ConfigFile=theme.conf
+Email=fralonra@aliyun.com
+Theme-Id=chinese-painting
+Theme-API=2.0

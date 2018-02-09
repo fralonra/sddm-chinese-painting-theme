@@ -1,6 +1,7 @@
 /***********************************************************************/
 
 import QtQuick 2.0
+import QtQuick.Window 2.2
 import QtGraphicalEffects 1.0
 import SddmComponents 2.0
 
@@ -98,7 +99,7 @@ Item {
           top: parent.top
           right: parent.right
         }
-        font.pointSize: config.fontBig
+        font.pixelSize: config.fontBig * Screen.width * 0.0006
         font.letterSpacing: 3
         color: config.colorText
 
@@ -115,7 +116,7 @@ Item {
           right: parent.right
         }
 
-        font.pointSize: config.fontMedium
+        font.pixelSize: config.fontMedium * Screen.width * 0.0006
         color: config.colorText
 
         function updateDate() {
@@ -159,13 +160,13 @@ Item {
           leftMargin: 20
           bottom: parent.bottom
         }
-        height: config.iconSmall
+        height: config.iconSmall * Screen.width * 0.0005
         opacity: 0.6
 
         ImgButton {
           id: sessionButton
-          width: config.iconSmall
-          height: config.iconSmall
+          width: config.iconSmall * Screen.width * 0.0005
+          height: config.iconSmall * Screen.width * 0.0005
           visible: sessionFrame.isMultipleSessions()
           normalImg: 'icons/session_menu.png'
           onClicked: {
@@ -181,8 +182,8 @@ Item {
 
         ImgButton {
           id: shutdownButton
-          width: config.iconSmall
-          height: config.iconSmall
+          width: config.iconSmall * Screen.width * 0.0005
+          height: config.iconSmall * Screen.width * 0.0005
           visible: true
 
           normalImg: 'icons/power_menu.png'

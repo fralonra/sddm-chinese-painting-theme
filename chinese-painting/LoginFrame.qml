@@ -1,4 +1,5 @@
 import QtQuick 2.0
+import QtQuick.Window 2.2
 import QtGraphicalEffects 1.0
 import SddmComponents 2.0
 
@@ -37,7 +38,7 @@ Item {
         left: parent.left
       }
       width: parent.width
-      height: config.iconLarge
+      height: config.iconLarge * Screen.width * 0.0005
 
       Text {
         id: userNameText
@@ -49,7 +50,7 @@ Item {
         }
         text: userName
         color: config.colorText
-        font.pointSize: config.fontMedium
+        font.pixelSize: config.fontMedium * Screen.width * 0.0006
       }
 
       UserAvatar {
@@ -59,8 +60,8 @@ Item {
           right: parent.right
           rightMargin: 40
         }
-        width: config.iconLarge
-        height: config.iconLarge
+        width: config.iconLarge * Screen.width * 0.0005
+        height: config.iconLarge * Screen.width * 0.0005
         source: userFrame.currentIconPath
         onClicked: {
           mainPanel.state = 'user'
@@ -116,7 +117,7 @@ Item {
           clip: true
           focus: true
           color: config.colorText
-          font.pointSize: 10
+          font.pixelSize: 10
           selectByMouse: true
           selectionColor: '#a8d6ec'
           echoMode: TextInput.Password
@@ -158,8 +159,8 @@ Item {
             leftMargin: 5
             verticalCenter: parent.verticalCenter
           }
-          width: config.iconLarge
-          height: config.iconLarge
+          width: config.iconLarge * Screen.width * 0.0005
+          height: config.iconLarge * Screen.width * 0.0005
           opacity: 0.8
 
           SequentialAnimation {

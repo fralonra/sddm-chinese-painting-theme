@@ -1,4 +1,5 @@
 import QtQuick 2.0
+import QtQuick.Window 2.2
 import QtGraphicalEffects 1.0
 
 Item {
@@ -83,13 +84,13 @@ Item {
       delegate: Item {
         property string icon: iconButton.normalImg
         property bool activeBG: sessionList.currentIndex === index && shouldShowBG
-        width: config.iconLarge
+        width: config.iconLarge * Screen.width * 0.0005
         height: parent.height
 
         Rectangle {
           id: iconWrapper
-          width: config.iconLarge
-          height: config.iconLarge
+          width: config.iconLarge * Screen.width * 0.0005
+          height: config.iconLarge * Screen.width * 0.0005
           border.width: 3
           border.color: parent.activeBG || parent.focus ? '#33ffffff' : 'transparent'
           radius: 8
@@ -101,8 +102,8 @@ Item {
               horizontalCenter: parent.horizontalCenter
               verticalCenter: parent.verticalCenter
             }
-            width: config.iconLarge
-            height: config.iconLarge
+            width: config.iconLarge * Screen.width * 0.0005
+            height: config.iconLarge * Screen.width * 0.0005
             normalImg: ('%1normal.png').arg(prefix)
             hoverImg: ('%1hover.png').arg(prefix)
             pressImg: ('%1press.png').arg(prefix)
@@ -132,7 +133,7 @@ Item {
             }
             width: parent.width
             horizontalAlignment: Text.AlignHCenter
-            font.pointSize: config.fontMedium
+            font.pixelSize: config.fontMedium * Screen.width * 0.0006
             color: 'white'
             wrapMode: Text.Wrap
             lineHeight: 0.75

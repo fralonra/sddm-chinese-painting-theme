@@ -1,4 +1,5 @@
 import QtQuick 2.0
+import QtQuick.Window 2.2
 import QtGraphicalEffects 1.0
 
 Item {
@@ -27,7 +28,7 @@ Item {
       height: parent.height
 
       Item {
-        width: config.iconLarge
+        width: config.iconLarge * Screen.width * 0.0005
         height: parent.height
 
         ImgButton {
@@ -36,8 +37,8 @@ Item {
             top: parent.top
             horizontalCenter: parent.horizontalCenter
           }
-          width: config.iconLarge
-          height: config.iconLarge
+          width: config.iconLarge * Screen.width * 0.0005
+          height: config.iconLarge * Screen.width * 0.0005
           normalImg: 'icons/powerframe/shutdown_normal.png'
           hoverImg: 'icons/powerframe/shutdown_hover.png'
           pressImg: 'icons/powerframe/shutdown_press.png'
@@ -54,7 +55,7 @@ Item {
             bottomMargin: 20
             horizontalCenter: parent.horizontalCenter
           }
-          font.pointSize: config.fontMedium
+          font.pixelSize: config.fontMedium * Screen.width * 0.0006
           color: 'white'
           horizontalAlignment: Text.AlignHCenter
           verticalAlignment: Text.AlignVCenter
@@ -62,7 +63,7 @@ Item {
       }
 
       Item {
-        width: config.iconLarge
+        width: config.iconLarge * Screen.width * 0.0005
         height: parent.height
 
         ImgButton {
@@ -71,8 +72,8 @@ Item {
             top: parent.top
             horizontalCenter: parent.horizontalCenter
           }
-          width: config.iconLarge
-          height: config.iconLarge
+          width: config.iconLarge * Screen.width * 0.0005
+          height: config.iconLarge * Screen.width * 0.0005
           normalImg: 'icons/powerframe/reboot_normal.png'
           hoverImg: 'icons/powerframe/reboot_hover.png'
           pressImg: 'icons/powerframe/reboot_press.png'
@@ -89,7 +90,7 @@ Item {
             bottomMargin: 20
             horizontalCenter: parent.horizontalCenter
           }
-          font.pointSize: config.fontMedium
+          font.pixelSize: config.fontMedium * Screen.width * 0.0006
           color: 'white'
           horizontalAlignment: Text.AlignHCenter
           verticalAlignment: Text.AlignVCenter
@@ -98,7 +99,7 @@ Item {
 
       Item {
         visible: sddm.canSuspend
-        width: config.iconLarge
+        width: config.iconLarge * Screen.width * 0.0005
         height: parent.height
 
         ImgButton {
@@ -107,8 +108,8 @@ Item {
             top: parent.top
             horizontalCenter: parent.horizontalCenter
           }
-          width: config.iconLarge
-          height: config.iconLarge
+          width: config.iconLarge * Screen.width * 0.0005
+          height: config.iconLarge * Screen.width * 0.0005
           normalImg: 'icons/powerframe/suspend_normal.png'
           hoverImg: 'icons/powerframe/suspend_hover.png'
           pressImg: 'icons/powerframe/suspend_press.png'
@@ -125,7 +126,7 @@ Item {
             bottomMargin: 20
             horizontalCenter: parent.horizontalCenter
           }
-          font.pointSize: config.fontMedium
+          font.pixelSize: config.fontMedium * Screen.width * 0.0006
           color: 'white'
           horizontalAlignment: Text.AlignHCenter
           verticalAlignment: Text.AlignVCenter
@@ -134,7 +135,7 @@ Item {
 
       Item {
         visible: sddm.canHibernate
-        width: config.iconLarge
+        width: config.iconLarge * Screen.width * 0.0005
         height: parent.height
 
         ImgButton {
@@ -143,8 +144,8 @@ Item {
             top: parent.top
             horizontalCenter: parent.horizontalCenter
           }
-          width: config.iconLarge
-          height: config.iconLarge
+          width: config.iconLarge * Screen.width * 0.0005
+          height: config.iconLarge * Screen.width * 0.0005
           normalImg: 'icons/powerframe/hibernate_normal.png'
           hoverImg: 'icons/powerframe/hibernate_hover.png'
           pressImg: 'icons/powerframe/hibernate_press.png'
@@ -161,7 +162,7 @@ Item {
             bottomMargin: 20
             horizontalCenter: parent.horizontalCenter
           }
-          font.pointSize: config.fontMedium
+          font.pixelSize: config.fontMedium * Screen.width * 0.0006
           color: 'white'
           horizontalAlignment: Text.AlignHCenter
           verticalAlignment: Text.AlignVCenter

@@ -1,4 +1,5 @@
 import QtQuick 2.0
+import QtQuick.Window 2.2
 import QtGraphicalEffects 1.0
 
 Item {
@@ -79,8 +80,8 @@ Item {
           topMargin: 10
           horizontalCenter: parent.horizontalCenter
         }
-        width: config.iconLarge
-        height: config.iconLarge
+        width: config.iconLarge * Screen.width * 0.0005
+        height: config.iconLarge * Screen.width * 0.0005
         source: icon
         onClicked: item.select()
       }
@@ -95,7 +96,7 @@ Item {
         }
         width: parent.width
         horizontalAlignment: Text.AlignHCenter
-        font.pointSize: config.fontMedium
+        font.pixelSize: config.fontMedium * Screen.width * 0.0006
         color: 'white'
         wrapMode: Text.WordWrap
       }

@@ -38,7 +38,7 @@ Item {
             horizontalCenter: parent.horizontalCenter
           }
           width: config.iconLarge * Screen.width * 0.0005
-          height: config.iconLarge * Screen.width * 0.0005
+          height: config.iconLarge * parent.height * 0.01
           normalImg: 'icons/powerframe/shutdown_normal.png'
           hoverImg: 'icons/powerframe/shutdown_hover.png'
           pressImg: 'icons/powerframe/shutdown_press.png'
@@ -73,7 +73,7 @@ Item {
             horizontalCenter: parent.horizontalCenter
           }
           width: config.iconLarge * Screen.width * 0.0005
-          height: config.iconLarge * Screen.width * 0.0005
+          height: config.iconLarge * parent.height * 0.01
           normalImg: 'icons/powerframe/reboot_normal.png'
           hoverImg: 'icons/powerframe/reboot_hover.png'
           pressImg: 'icons/powerframe/reboot_press.png'
@@ -109,7 +109,7 @@ Item {
             horizontalCenter: parent.horizontalCenter
           }
           width: config.iconLarge * Screen.width * 0.0005
-          height: config.iconLarge * Screen.width * 0.0005
+          height: config.iconLarge * parent.height * 0.01
           normalImg: 'icons/powerframe/suspend_normal.png'
           hoverImg: 'icons/powerframe/suspend_hover.png'
           pressImg: 'icons/powerframe/suspend_press.png'
@@ -145,7 +145,7 @@ Item {
             horizontalCenter: parent.horizontalCenter
           }
           width: config.iconLarge * Screen.width * 0.0005
-          height: config.iconLarge * Screen.width * 0.0005
+          height: config.iconLarge * parent.height * 0.01
           normalImg: 'icons/powerframe/hibernate_normal.png'
           hoverImg: 'icons/powerframe/hibernate_hover.png'
           pressImg: 'icons/powerframe/hibernate_press.png'

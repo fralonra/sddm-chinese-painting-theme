@@ -90,7 +90,7 @@ Item {
         Rectangle {
           id: iconWrapper
           width: config.iconLarge * Screen.width * 0.0005
-          height: config.iconLarge * Screen.width * 0.0005
+          height: config.iconLarge * parent.height * 0.01
           border.width: 3
           border.color: parent.activeBG || parent.focus ? '#33ffffff' : 'transparent'
           radius: 8
@@ -103,7 +103,7 @@ Item {
               verticalCenter: parent.verticalCenter
             }
             width: config.iconLarge * Screen.width * 0.0005
-            height: config.iconLarge * Screen.width * 0.0005
+            height: config.iconLarge * parent.height * 0.01
             normalImg: ('%1normal.png').arg(prefix)
             hoverImg: ('%1hover.png').arg(prefix)
             pressImg: ('%1press.png').arg(prefix)

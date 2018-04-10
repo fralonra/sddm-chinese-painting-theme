@@ -53,8 +53,8 @@ Item {
         right: parent.right
         rightMargin: rootPadding + 80
       }
-      width: 300
-      height: 100
+      width: 300 * Screen.width * 0.0005
+      height: 100 * Screen.width * 0.0005
 
       UserFrame {
         id: userFrame
@@ -160,13 +160,13 @@ Item {
           leftMargin: 20
           bottom: parent.bottom
         }
-        height: config.iconSmall * Screen.width * 0.0005
+        height: config.iconSmall * Screen.height * 0.001
         opacity: 0.6
 
         ImgButton {
           id: sessionButton
           width: config.iconSmall * Screen.width * 0.0005
-          height: config.iconSmall * Screen.width * 0.0005
+          height: config.iconSmall * Screen.height * 0.001
           visible: sessionFrame.isMultipleSessions()
           normalImg: 'icons/session_menu.png'
           onClicked: {
@@ -183,7 +183,7 @@ Item {
         ImgButton {
           id: shutdownButton
           width: config.iconSmall * Screen.width * 0.0005
-          height: config.iconSmall * Screen.width * 0.0005
+          height: config.iconSmall * Screen.height * 0.001
           visible: true
 
           normalImg: 'icons/power_menu.png'
@@ -210,7 +210,7 @@ Item {
           top: parent.top
           left: parent.left
         }
-        height: config.frameHeight
+        height: config.frameHeight * Screen.height * 0.001
         opacity: 0.75
 
         PowerFrame {

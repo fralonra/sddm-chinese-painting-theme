@@ -1,6 +1,8 @@
 [SddmGreeterTheme]
 Name=Chinese Painting
+Name[zh_CN]=清明上河图
 Description=Chinese style SDDM theme.
+Description[zh_CN]=清明上河图SDDM主题.
 License=GPL3.0
 Type=sddm-theme
 Version=0.1

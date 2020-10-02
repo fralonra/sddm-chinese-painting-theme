@@ -15,7 +15,7 @@ This repo aims at making a Chinese style theme for [sddm](https://github.com/sdd
 
 ### Archlinux
 ```
-$ yaourt -S sddm-chinese-painting-theme
+$ yay -S sddm-chinese-painting-theme
 ```
 ### Others
 1. Install **qt5-graphicaleffects** package.
